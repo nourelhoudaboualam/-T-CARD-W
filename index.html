@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U R MY PEACH 🍑</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Grandstander:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --hot-orange: #ff4500;
+            --peach-main: #ff8c00;
+            --peach-soft: #ffe5b4;
+            --peach-gold: #ffcc33;
+            --eggplant: #4b0082;
+        }
+        body {
+            font-family: 'Grandstander', cursive;
+            background-color: var(--peach-soft);
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">🍑</text></svg>'), auto;
+        }
+        .font-bratz {
+            font-family: 'Shrikhand', cursive;
+            letter-spacing: 0.02em;
+        }
+        .font-chunky {
+            font-family: 'Titan One', cursive;
+        }
+        @keyframes float-peach {
+            0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 1; }
+            50% { transform: translateY(-50vh) rotate(180deg) scale(1.3); opacity: 0.8; }
+            100% { transform: translateY(-100vh) rotate(360deg) scale(0.7); opacity: 0; }
+        }
+        .peach-particle {
+            position: absolute;
+            bottom: -60px;
+            animation: float-peach linear forwards;
+            pointer-events: none;
+            filter: drop-shadow(0 0 8px rgba(255, 140, 0, 0.4));
+        }
+        .kawaii-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            border: 6px solid white;
+            box-shadow: 10px 10px 0px var(--peach-main), 15px 15px 30px rgba(0,0,0,0.1);
+            border-radius: 50px;
+        }
+        .bratz-button {
+            box-shadow: 5px 5px 0px #000;
+            transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bratz-button:active {
+            box-shadow: 0px 0px 0px #000;
+            transform: translate(5px, 5px);
+        }
+        .peach-text {
+            background: linear-gradient(90deg, #ff4500, #ffcc33, #ff4500);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+</head>
+<body class="min-h-screen">
+    <div id="root"></div>
+</body>
+</html>
